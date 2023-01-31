@@ -419,10 +419,20 @@
             </li>
           </ul>
         </div>
-      </div>
+        <div class="footer-subscribe-form">
+          <h4 class="footer-subscribe-title">Subscribe</h4>
+          <form class="footer-form">
+          <input type="email" name="user-email" class="footer-input" placeholder="E-mail" required>
+          <button type="submit" class="footer-subscribe-button">Subscribe</button>
+          <svg>
+            <use href="./images/sprite.svg#icon-letter"></use>
+          </svg>
+          </form>
+        </div>
+        </div>
     </footer>
     <!-- =================================Modal window=============================================== -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-button" data-modal-close>
         <svg class="modal-close-button-icon" width="8" height="8">
@@ -463,6 +473,9 @@
             <textarea class="modal-form-message" name="user-message"placeholder="Text input"></textarea>
           </label>
           <input type="checkbox" class="modal-form-check" name="user-policy" id="user-policy">
+          <svg class="checkbox-icon">
+            <use href="./images/sprite.svg#icon-click"></use>
+          </svg>
           <label for="user-policy" class="modal-form-check-desc"><span class="checkbox-text">I accept the terms and conditions of the</span><a href="">Privacy Policy</a></label>
           <button type="submit" class="modal-form-button">Send</button>
         </form>
