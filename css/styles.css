@@ -481,7 +481,16 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 background: #2E2F42;
-margin-right: 23px;}
+margin-right: 23px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #E7E9FC;
+transition: border 250ms var(--cubic);}
+
 
 .footer-subscribe-button{
 display: flex;
@@ -635,34 +644,23 @@ color: rgba(117, 117, 117, 0.5);}
 
 .user-policy{display: flex; margin-bottom: 24px;}
 
+.checkbox-icon-click{width: 10px;height: 8px;}
+
 .checkbox-icon{
-display: block;
-width: 16px;
+display: flex; 
+justify-content: center; 
+align-items: center;
+width: 16px; 
 height: 16px;
 border: 1.25px solid #2E2F42;
 border-radius: 2px;
-opacity: 1;
-margin-right: 8px;
-}
+margin-right: 8px; 
+fill: transparent;
+transition: border 250ms var(--cubic), background-color 250ms var(--cubic), fill 250ms var(--cubic);}
 
-.checkbox-icon-click{
-display: block;
-width: 16px;
-height: 16px;
-background: #404BBF;
-border: 1.25px solid #404BBF;
-border-radius: 2px;
-fill: #F4F4FD;
-cursor: pointer;
-opacity: 0;
-transition: opacity 250ms var(--cubic);
-}
+.modal-form-check:checked + .checkbox-icon {border: none; background-color: #404BBF ; fill: #F4F4FD ;}
 
-.checkbox-icon-click:focus{opacity: 1;}
-
-.modal-form-check:checked + .checkbox-icon-click {opacity: 1;}
-
-.modal-form-check {
+.visually-hidden {
 position: absolute;
 width: 1px;
 height: 1px;
